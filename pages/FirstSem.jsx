@@ -27,7 +27,7 @@ function Maths(){
     return (
         <div>
             <h1><u>CHEMISTRY CYCLE</u></h1>
-            <h3 style={{marginRight:'16px', display:"inline-block"}}>Mathematics for CSE Stream-1(BMATS101)</h3>
+            <h3 style={{marginRight:'16px', display:"inline-block"}}>Mathematics for CSE Stream(BMATS101/201)</h3>
             <input type="text" placeholder="MARKS/100" onChange={(e)=>{
                 (e.target.value ==  "")? marks(0) : marks(() => s + parseInt(e.target.value))
             }}></input>

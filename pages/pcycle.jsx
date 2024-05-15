@@ -28,7 +28,7 @@ function Maths(){
     return (
         <div>
             <h1><u>PHYSICS CYCLE</u></h1>
-            <h3 style={{marginRight:'16px', display:"inline-block"}}>Mathematics for CSE Stream-1(BMATS101)</h3>
+            <h3 style={{marginRight:'16px', display:"inline-block"}}>Mathematics for CSE Stream(BMATS101/201)</h3>
             <input type="text" placeholder="MARKS/100" onChange={(e)=>{
                 (e.target.value ==  "")? marks(0) : marks(() => s + parseInt(e.target.value))
             }}></input>
@@ -67,7 +67,7 @@ function IOT(){
 
     return (
         <div>
-            <h3 style={{marginRight:'16px', display:"inline-block"}} >Intro to IOT(BETCK105H/205H)</h3>
+            <h3 style={{marginRight:'16px', display:"inline-block"}} >Emerging Technology Course -I/II(BETCK105/205)</h3>
             <input type="text" placeholder="MARKS/100" onChange={(e)=>{
                 (e.target.value ==  "")? marks(0) : marks(() => s + parseInt(e.target.value))
             }}></input>
@@ -80,7 +80,7 @@ function PLC(){
 
     return (
         <div>
-            <h3 style={{marginRight:'16px', display:"inline-block"}} >Introduction to C++ programming(BPLCK105D-205D)</h3>
+            <h3 style={{marginRight:'16px', display:"inline-block"}} >Introduction to C programming(POP)(BPOPS105D-205D)</h3>
             <input type="text" placeholder="MARKS/100" onChange={(e)=>{
                 (e.target.value ==  "")? marks(0) : marks(() => s + parseInt(e.target.value))
             }}></input>
