@@ -34,6 +34,10 @@ export const icoAtom = atom({
     default : 0
 })
 
+function point (sub){
+    return (sub == "100" ? 10 : parseInt(sub / 10) + 1)
+}
+
 export const sgpaSelector = selector({
     key : "sgpaSelector",
     get : ({get}) => {
@@ -45,14 +49,14 @@ export const sgpaSelector = selector({
         let eng = get(engAtom)
         let sfh = get(sfhAtom)
         let ico = get(icoAtom)
-        maths = parseInt(maths / 10) + 1
-        chem = parseInt(chem / 10) + 1
-        caed = parseInt(caed / 10)  + 1
-        esc = parseInt(esc / 10) + 1
-        plc = parseInt(plc / 10) + 1
-        eng = parseInt(eng / 10) + 1
-        sfh = parseInt(sfh / 10)  + 1
-        ico = parseInt(ico / 10) + 1
+        maths= point(maths)
+        chem = point(chem)
+        plc = point(plc)
+        caed =point(caed)
+        esc = point(esc)
+        eng = point(eng)
+        sfh = point(sfh)
+        ico =point(ico)
         const sum = (maths*4 + chem*4 + plc*3 + caed*3 + esc*3 + eng + sfh + ico) 
         return (sum)/20
     }
