@@ -5,7 +5,7 @@ export default function Landing(){
     return (
       <>
         <h1>
-          FIRST SEM SGPA CALCULATOR
+          VTU SGPA CALCULATOR
         </h1>
         <div>
           <button style={{marginRight:'16px'}} onClick={() => {
