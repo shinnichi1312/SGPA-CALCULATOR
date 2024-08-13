@@ -5,6 +5,7 @@ import './App.css'
 import { Suspense, lazy } from 'react'
 import Landing from '../pages/Landing'
 import { RecoilRoot } from 'recoil'
+import { Analytics } from "@vercel/analytics/react"
 
 const Ccycle = lazy(() => import('../pages/FirstSem'))
 const Pcycle = lazy(() => import('../pages/pcycle'))
@@ -37,6 +38,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       </RecoilRoot>
+      <Analytics/>
     </div>
   )
 }
